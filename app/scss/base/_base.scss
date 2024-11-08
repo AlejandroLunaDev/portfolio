@@ -1,20 +1,38 @@
 @import './_variables.scss';
+
+@font-face {
+    font-family: 'Segoe UI Variable';
+    src: url('/assets/fonts/SegoeUIVariable.woff2') format('woff2'),
+         url('/assets/fonts/SegoeUIVariable.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
   /*   color-scheme: light dark; */
 }
 
 html{
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
+    color:$primary-bright;
+    font-family: 'Segoe UI Variable', sans-serif;
+
 }
 section{
     height: 100dvh;
     scroll-snap-align: center;
     scroll-snap-stop: always;
-    background:$color-neutral-black;
-    color:$color-neutral-white;
+    background:$primary-dark;
+
+}
+
+a {
+    text-decoration: none;
+    color:$primary-bright;
+
 }

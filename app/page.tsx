@@ -1,7 +1,47 @@
-
+import Image from 'next/image';
+import './page.scss';
+import AnimatedWord from './components/AnimatedWord/AnimatedWord';
 
 export default function Home() {
+  const initialTexts = {
+    text1: 'Hello',
+    text2: 'I am',
+    text3: 'Ale'
+  };
+
+  // Puedes definir hoverText y animationDelay en cada palabra.
   return (
-    <div>Home</div>
-  )
+    <section className='home'>
+      <picture>
+        <Image src='/logoale2.svg' width={500} height={500} alt='logo' />
+      </picture>
+      <article>
+        <div>
+          <AnimatedWord
+            text={initialTexts.text1}
+            hoverText='About' // Texto al pasar el ratón
+            animationDelay={300} // Retraso de la animación
+            href='/about' // Puedes poner la URL aquí si lo deseas
+          />
+        </div>
+        <div>
+          <AnimatedWord
+            text={initialTexts.text2}
+            hoverText='Projects' // Texto alternativo para hover
+            animationDelay={600} // Retraso de animación
+            href='/projects' // Puedes definir el enlace aquí
+          />
+        </div>
+        <div>
+          <AnimatedWord
+            text={initialTexts.text3}
+            hoverText='Contact'
+            animationDelay={800} // Retraso de animación
+            href='/contact'
+            className='variant'
+          />
+        </div>
+      </article>
+    </section>
+  );
 }

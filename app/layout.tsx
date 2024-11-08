@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.scss";
+// app/layout.js o app/layout.tsx
 
 
 export const metadata: Metadata = {
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
   description: "Showcasing the creative and functional web applications built by Alejandro, a passionate frontend developer skilled in JavaScript, React, and modern web technologies.",
   keywords: ["Frontend Developer", "JavaScript", "React", "Web Development", "Portfolio", "Alejandro"],
   icons: {
-    icon: "/logo.svg",
+    icon: "/vite.svg",
   }
 };
 

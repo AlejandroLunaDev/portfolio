@@ -1,0 +1,41 @@
+@use 'sass:map';
+@import '../../scss/base/_variables.scss'; // Importar variables y mixins si es necesario
+@import '../../scss/base/_mixinsfunc.scss';
+@import '../../scss/animations/animations.scss'; // Si tienes animaciones globales, importarlas aquí
+
+/* Animación que se aplicará a las palabras */
+.animated-word {
+  position: relative;
+  font-size: 4rem;
+  line-height: 6.1rem;
+  letter-spacing: -5px;
+  font-weight: 700;
+  @include apply-animation();
+
+
+  &:hover {
+ 
+    @include apply-animation(true);
+    letter-spacing: -2px;
+    background-image: linear-gradient(
+      225deg,
+      #43efff 34%,
+      #7e0a61 96%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+
+@media (width > map.get($break-pontis, 'sm')) {
+  .animated-word {
+    font-size: 8rem;
+    line-height: 9rem;
+  }
+
+  }
+
+ 
+
+

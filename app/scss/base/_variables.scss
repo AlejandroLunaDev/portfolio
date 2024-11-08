@@ -1,17 +1,20 @@
 /* Breackpoints */
 
 $break-pontis: (
-    "xs": 595px,
-    "sm":760px,
-    "md":1200px, 
+    "xs": 395px,
+    "sm":768px,
+    "md":1220px, 
 );
 
 /* Colors */
 
-$color-neutral-white: #ffffff;
-$color-neutral-black: #000000;
-$color-neutral-gray: #888888;
+$primary-bright: #fff;
+$primary-dark: #141415;
+$primary-dim: #888889;
+$background-dim: #08090a;
+$background-dim2: #0e0f11;
 
 $color-primary: #3b043e;
-$color-secondary: #43efff;
+$secondary: #7feaff;
 
+$neon-1: #a7d575;

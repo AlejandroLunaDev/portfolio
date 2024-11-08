@@ -1,0 +1,49 @@
+@use 'sass:map';
+@import './scss/base/_variables.scss';
+@import './scss/base/_mixinsfunc.scss';
+@import './scss/animations/animations';
+
+.home {
+@include flex(colum,$jc:center,$al:center);
+  width: 100%;
+  height: 100dvh;
+  picture {
+    width: 100%;
+    height: 370px;
+   display: flex;
+   justify-content: center;
+   animation: fadeIn  2s ease-in-out;
+   img{
+    width: 250px;
+    object-fit: contain;
+   }
+  }
+
+  article {
+    text-align: center;
+    gap: 1rem;
+    justify-content: center;
+    .variant {
+      color: red !important;
+      
+    }
+
+  }
+}
+
+@media (width > map.get($break-pontis, 'sm')) {
+
+  .home {
+    article {
+      display: flex;
+    }
+    picture {
+      height: 500px;
+      img{
+        width: 500px;
+       }
+      }
+      }
+
+
+  }
