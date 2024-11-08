@@ -14,15 +14,21 @@
    justify-content: center;
    animation: fadeIn  2s ease-in-out;
    img{
-    width: 250px;
+    width: 200px;
     object-fit: contain;
    }
   }
 
   article {
-    text-align: center;
-    gap: 1rem;
-    justify-content: center;
+
+    .wordsContainer {
+      display:flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 35%;
+      object-fit: contain;
+      margin: 0 auto;
+    }
     .variant {
       color: red !important;
       
@@ -35,7 +41,14 @@
 
   .home {
     article {
-      display: flex;
+
+      .wordsContainer {
+       @include flex(row,$jc:center,$al:center,$fw:nowrap);
+       flex-direction: row;
+        gap: 1rem;
+        width: 100%;
+
+      }
     }
     picture {
       height: 500px;
