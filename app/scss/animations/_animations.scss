@@ -56,3 +56,9 @@
       opacity: 1;
     }
   }
+
+  @keyframes scrollDown {
+    50% {
+      transform: translateY(0.5rem);
+    }
+  }

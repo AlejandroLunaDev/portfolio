@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import './page.scss';
 import AnimatedWord from './components/AnimatedWord/AnimatedWord';
+import TapHint from './components/tapHint/TapHint';
 
 export default function Home() {
   const initialTexts = {
@@ -16,6 +17,7 @@ export default function Home() {
         <Image src='/logoale2.svg' width={500} height={500} alt='logo' />
       </picture>
       <article>
+        <div className='gostContainer'></div>
         <div className='wordsContainer'>
             <AnimatedWord
               text={initialTexts.text1}
@@ -43,6 +45,7 @@ export default function Home() {
    
         </div>
       </article>
+      <TapHint />
     </section>
   );
 }

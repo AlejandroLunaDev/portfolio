@@ -29,13 +29,19 @@
 }
 
 
-@media (width > map.get($break-pontis, 'sm')) {
+@include respond-to('tablet', 1023px) {
+  .animated-word {
+    font-size: 6rem;
+  }
+}
+
+@include respond-to('desktop') {
   .animated-word {
     font-size: 8rem;
-    line-height: 9rem;
   }
+}
 
-  }
+
 
  
 

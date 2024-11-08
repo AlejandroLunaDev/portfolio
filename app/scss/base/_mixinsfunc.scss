@@ -23,3 +23,17 @@
     }
   }
   
+  @mixin respond-to($device, $max: null) {
+    $min-width: map.get($breakpoints, $device);
+    @if $max {
+      @media (min-width: #{$min-width}) and (max-width: #{$max}) {
+        @content;
+      }
+    } @else {
+      @media (min-width: #{$min-width}) {
+        @content;
+      }
+    }
+  }
+  
+  

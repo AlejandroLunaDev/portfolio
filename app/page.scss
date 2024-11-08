@@ -1,6 +1,6 @@
 @use 'sass:map';
-@import './scss/base/_variables.scss';
 @import './scss/base/_mixinsfunc.scss';
+@import './scss/base/_variables.scss';
 @import './scss/animations/animations';
 
 .home {
@@ -25,7 +25,7 @@
       display:flex;
       flex-direction: column;
       align-items: flex-start;
-      width: 35%;
+      width: 30%;
       object-fit: contain;
       margin: 0 auto;
     }
@@ -37,26 +37,53 @@
   }
 }
 
-@media (width > map.get($break-pontis, 'sm')) {
-
+@include respond-to('tablet', 1023px) {
   .home {
-    article {
-
-      .wordsContainer {
-       @include flex(row,$jc:center,$al:center,$fw:nowrap);
-       flex-direction: row;
-        gap: 1rem;
-        width: 100%;
-
+    picture {
+      height: 450px;
+      img {
+        width: 300px;
       }
     }
+    article {
+      @include flex();
+      .gostContainer {
+        width: 60%;
+        height: 100%;
+        opacity: 0;
+      }
+      .wordsContainer {
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+      }
+    }
+  }
+}
+
+
+@include respond-to('desktop') {
+  .home {
     picture {
       height: 500px;
-      img{
+      img {
         width: 500px;
-       }
       }
+    }
+    article {
+      .wordsContainer {
+      @include flex();
+        flex-direction: row;
+        gap: 2rem;
+        width: 100%;
       }
-
-
+    }
   }
+}
+
+
+
+  
+  
+  
