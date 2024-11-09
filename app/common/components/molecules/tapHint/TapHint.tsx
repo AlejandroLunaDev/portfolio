@@ -1,6 +1,7 @@
 import { TbHandClick } from 'react-icons/tb';
-import PortfolioParagraph from '../portfolioParagraph/portfolioParagraph';
+
 import styles from './taphint.module.scss';
+import PortfolioParagraph from '../../atoms/portfolioParagraph/portfolioParagraph';
 
 export default function TapHint() {
   return (

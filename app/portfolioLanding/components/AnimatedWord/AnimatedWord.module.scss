@@ -1,7 +1,7 @@
 @use 'sass:map';
-@import '../../scss/base/_variables.scss'; // Importar variables y mixins si es necesario
-@import '../../scss/base/_mixinsfunc.scss';
-@import '../../scss/animations/animations.scss'; // Si tienes animaciones globales, importarlas aquí
+@import '../../../scss/base/_variables.scss'; // Importar variables y mixins si es necesario
+@import '../../../scss/base/_mixinsfunc.scss';
+@import '../../../scss/animations/animations.scss'; // Si tienes animaciones globales, importarlas aquí
 
 /* Animación que se aplicará a las palabras */
 .animated-word {
@@ -20,7 +20,7 @@
     letter-spacing: -2px;
     background-image: linear-gradient(
       225deg,
-      #43efff 34%,
+      #7feaff 34%,
       #7e0a61 96%
     );
     -webkit-background-clip: text;

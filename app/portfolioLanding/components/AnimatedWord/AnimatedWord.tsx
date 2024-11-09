@@ -2,7 +2,7 @@
 import React, { useRef } from 'react';
 import styles from './AnimatedWord.module.scss';
 import Link from 'next/link';
-import useHover from '../../hooks/useHover'; 
+import useHover from '../../../hooks/useHover'; 
 
 interface AnimatedWordProps {
   text: string;

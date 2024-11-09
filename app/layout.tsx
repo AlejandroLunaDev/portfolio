@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.scss";
+
 // app/layout.js o app/layout.tsx
 
 
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+
         {children}
       </body>
     </html>
