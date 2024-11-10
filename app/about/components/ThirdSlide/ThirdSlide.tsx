@@ -5,10 +5,9 @@ export default function ThirdSlide() {
   return (
     <section className={styles.skills}>
       <header>
-        <h1>Habilidades</h1>
+        <h1>Skills</h1>
         <p>
-          Lenguajes que hablo, herramientas de desarrollo y diseño que disfruto
-          especialmente
+          Languages I speak, development and design tools I especially enjoy
         </p>
       </header>
       <div className={styles.divider}></div>
@@ -107,7 +106,7 @@ export default function ThirdSlide() {
           </ul>
           <ul className={styles.frontendList}>
             <li>
-              <h4>Lenguajes</h4>
+              <h4>Lenguages</h4>
               <p>Javascript, Typescript</p>
             </li>
             <li>
@@ -174,7 +173,7 @@ export default function ThirdSlide() {
           </ul>
           <ul className={styles.backendList}>
             <li>
-              <h4>Lenguajes</h4>
+              <h4>Lenguages</h4>
               <p>Node.js (Javascript, Typescript)</p>
             </li>
             <li>
@@ -182,7 +181,7 @@ export default function ThirdSlide() {
               <p>Express, NestJS</p>
             </li>
             <li>
-              <h4>Base de Datos</h4>
+              <h4>Data Base</h4>
               <p>MongoDB</p>
             </li>
             <li>

@@ -16,6 +16,7 @@ export default function About() {
     <section>
     <ThirdSlide />
     </section>
+    <section>4</section>
     </>
   )
 }
