@@ -1,12 +1,25 @@
+'use client'
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import styles from './Logo.module.scss';
 
 export default function Logo() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 500);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div className={styles.brand}>
       <Link href='/'>
         <span className={styles.logoContainer}>
-          <span className={styles.name}>
+          <span className={`${styles.name} ${isScrolled ? styles.scrolled : ''}`}>
             <span className={styles.char}>A</span>
             <span className={styles.char}>l</span>
             <span className={styles.char}>e</span>

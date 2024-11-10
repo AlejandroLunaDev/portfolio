@@ -1,7 +1,8 @@
 import Image from 'next/image';
-import './scss/PortfolioLanding.scss';
-import AnimatedWord from '../components/AnimatedWord/AnimatedWord';
+import './PortfolioLanding.scss';
 import TapHint from '@/app/common/components/molecules/tapHint/TapHint';
+import { TbHandClick } from 'react-icons/tb';
+import AnimatedWord from '../atoms/AnimatedWord/AnimatedWord';
 
 export default function PortfolioLanding() {
   const initialTexts = {
@@ -42,7 +43,7 @@ export default function PortfolioLanding() {
           />
         </div>
       </article>
-      <TapHint />
+      <TapHint Icon={TbHandClick} paragraphText='Tap anywhere' />
     </section>
   );
 }

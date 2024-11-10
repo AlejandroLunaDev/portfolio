@@ -1,0 +1,58 @@
+@use 'sass:map';
+@use '../../../scss//animations/animations';
+@use '../../../scss/base/_mixinsfunc';
+@use '../../../scss/base/variables';
+
+.hero {
+  width: 100%;
+  display: flex;
+  padding: 0 10px;
+  flex-direction: column;
+  align-items: center;
+  background: variables.$color-primary;
+  background: linear-gradient(0deg, variables.$color-primary 0%, variables.$primary-dark 30%);
+  height: 100dvh;
+  h1 {
+    color: variables.$secondary;
+    font-size: 2.5rem;
+    letter-spacing: -3px;
+    line-height: 1.6;
+    font-weight: 800;
+    padding-top: 250px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 40px;
+    animation: fadeIn 2s ease forwards;
+  }
+
+  p {
+    color: variables.$primary-bright;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.6;
+    z-index: 3;
+    animation: slide-up 2s ease forwards;
+  }
+}
+
+@include mixinsfunc.respond-to('tablet', 1023px) {
+  .hero {
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@include mixinsfunc.respond-to('desktop') {
+  .hero {
+    h1 {
+      font-size: 5rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}

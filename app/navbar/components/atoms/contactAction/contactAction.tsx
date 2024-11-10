@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import styles from './ContactAction.module.scss';
 export interface Item {
   id: number;
@@ -40,13 +40,6 @@ export default function ContactAction({ items: items }: { items: Item[] }) {
           rel='noopener noreferrer'
         >
           <FaLinkedin size={35} />
-        </a>
-        <a
-          href='https://www.instagram.com/alejandro.luna87/'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <FaInstagram size={35} />
         </a>
       </div>
     </motion.div>

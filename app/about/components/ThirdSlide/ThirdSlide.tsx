@@ -1,0 +1,198 @@
+import Image from 'next/image';
+import styles from './ThirdSilide.module.scss';
+
+export default function ThirdSlide() {
+  return (
+    <section className={styles.skills}>
+      <header>
+        <h1>Habilidades</h1>
+        <p>
+          Lenguajes que hablo, herramientas de desarrollo y diseño que disfruto
+          especialmente
+        </p>
+      </header>
+      <div className={styles.divider}></div>
+      <main>
+        <div className={styles.frontend}>
+          <h1>Frontend</h1>
+          <ul className={styles.frontendListIcon}>
+            <li>
+              <figure>
+                <Image
+                  src='logos_javascript.svg'
+                  width={100}
+                  height={100}
+                  alt='javascript'
+                />
+              </figure>
+              <span>Javascript</span>
+            </li>
+            <li>
+              <figure>
+                <Image
+                  src='devicon_typescript.svg'
+                  width={100}
+                  height={100}
+                  alt='typescript'
+                />
+              </figure>
+              <span>Typescript</span>
+            </li>
+            <li>
+              <figure>
+                <Image
+                  width={100}
+                  height={100}
+                  src='logos_react.svg'
+                  alt='react'
+                />
+              </figure>
+              <span>React</span>
+            </li>
+            <li>
+              <figure>
+                <Image
+                  width={100}
+                  height={100}
+                  src='devicon_nextjs.svg'
+                  alt='nextJS'
+                />
+              </figure>
+              <span>NextJS</span>
+            </li>
+            <li>
+              <figure className={styles.large}>
+                <Image
+                  src='vscode-icons_file-type-html.svg'
+                  alt='html'
+                  width={100}
+                  height={100}
+                />
+              </figure>
+              <span>HTML</span>
+            </li>
+            <li>
+              <figure className={styles.large}>
+                <Image
+                  width={100}
+                  height={100}
+                  src='vscode-icons_file-type-css.svg'
+                  alt='css'
+                />
+              </figure>
+              <span>CSS</span>
+            </li>
+            <li>
+              <figure className={styles.large}>
+                <Image
+                  width={100}
+                  height={100}
+                  src='devicon_tailwindcss.svg'
+                  alt='tailwind'
+                />
+              </figure>
+              <span>Tailwind</span>
+            </li>
+            <li>
+              <figure className={styles.large}>
+                <Image
+                  width={100}
+                  height={100}
+                  src='devicon_sass.svg'
+                  alt='sass'
+                />
+              </figure>
+              <span>Sass</span>
+            </li>
+          </ul>
+          <ul className={styles.frontendList}>
+            <li>
+              <h4>Lenguajes</h4>
+              <p>Javascript, Typescript</p>
+            </li>
+            <li>
+              <h4>Frameworks</h4>
+              <p>React, NextJS</p>
+            </li>
+            <li>
+              <h4>Tools & Libraries</h4>
+              <p>Tailwind, Sass, Figma</p>
+            </li>
+            <li>
+              <h4>Core</h4>
+              <p>HTML, CSS</p>
+            </li>
+          </ul>
+        </div>
+        <div className={styles.backend}>
+          <h1>Backend</h1>
+          <ul className={styles.backendListIcon}>
+            <li>
+              <figure>
+                <Image
+                  width={100}
+                  height={100}
+                  src='vscode-icons_file-type-node.svg'
+                  alt='Node'
+                />
+              </figure>
+              <span>Node.js</span>
+            </li>
+            <li>
+              <figure>
+                <Image
+                  width={100}
+                  height={100}
+                  src='devicon_express.svg'
+                  alt='express'
+                />
+              </figure>
+              <span>Express</span>
+            </li>
+            <li>
+              <figure>
+                <Image
+                  width={100}
+                  height={100}
+                  src='devicon_nestjs.svg'
+                  alt='NestJS'
+                />
+              </figure>
+              <span>NestJS</span>
+            </li>
+            <li>
+              <figure>
+                <Image
+                  width={30}
+                  height={30}
+                  src='vscode-icons_file-type-mongo.svg'
+                  alt='mongo'
+                />
+              </figure>
+              <span>MongoDB</span>
+            </li>
+          </ul>
+          <ul className={styles.backendList}>
+            <li>
+              <h4>Lenguajes</h4>
+              <p>Node.js (Javascript, Typescript)</p>
+            </li>
+            <li>
+              <h4>Frameworks</h4>
+              <p>Express, NestJS</p>
+            </li>
+            <li>
+              <h4>Base de Datos</h4>
+              <p>MongoDB</p>
+            </li>
+            <li>
+              <h4>API</h4>
+              <p>RESTful</p>
+            </li>
+          </ul>
+        </div>
+      </main>
+      <div className={styles.divider1}></div>
+    </section>
+  );
+}

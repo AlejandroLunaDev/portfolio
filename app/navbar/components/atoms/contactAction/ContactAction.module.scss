@@ -1,3 +1,5 @@
+
+@use '../../../../scss/base/variables.scss';
 .connect{
     text-align: end;
     p{
@@ -11,10 +13,10 @@
     .icons {
       a{
         text-decoration: none;
-        color:  #6f1c73;
+        color:  variables.$secondary;
       }
       display: flex;
-      gap: 5px;
+      gap: 10px;
       justify-content: end;
       margin-top: 10px;
     }

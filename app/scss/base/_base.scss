@@ -1,4 +1,6 @@
-@import './_variables.scss';
+@use 'sass:map';
+@use './_variables.scss';
+@use './_mixinsfunc.scss';
 
 @font-face {
     font-family: 'Segoe UI Variable';
@@ -17,9 +19,7 @@
 }
 
 html{
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-    color:$primary-bright;
+    color:variables.$primary-bright;
     font-family: 'Segoe UI Variable', sans-serif;
 
 }
@@ -27,12 +27,26 @@ section{
     height: 100dvh;
     scroll-snap-align: center;
     scroll-snap-stop: always;
-    background:$primary-dark;
+    background:variables.$primary-dark;
 
 }
 
 a {
     text-decoration: none;
-    color:$primary-bright;
+    color:variables.$primary-bright;
 
+}
+
+@include mixinsfunc.respond-to("tablet", 1023px) {
+  html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+}
+
+@include mixinsfunc.respond-to("desktop") {
+  html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
 }

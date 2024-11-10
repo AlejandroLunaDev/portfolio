@@ -68,7 +68,7 @@ export default function NavigationMenu() {
             ))}
             {/* footer */}
             <motion.div className={styles.menuLine} initial={{ width: 0 }} animate={{ width: '100%' }} transition={{ duration: 0.5 }} />
-            <Link href='/' style={{ display: 'flex', justifyContent: 'right', paddingRight: '10px' }}>
+            <Link href='/' style={{ display: 'flex', justifyContent: 'right', paddingRight: '5px' }}>
               <motion.img src='logoale3D.svg' alt='' style={{ width: 100, height: 100 }} variants={imageVariants} />
             </Link>
             {/* Sección de Conéctate */}

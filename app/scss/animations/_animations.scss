@@ -62,3 +62,40 @@
       transform: translateY(0.5rem);
     }
   }
+
+  @keyframes tracking-in-expand1 {
+    0% {
+      transform: translateY(-1em);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0) ; ;
+      opacity: 1;
+    }
+  }
+
+
+  @keyframes move-in-left {
+    0% {
+      transform: translateX(-100%) translateY(20%) rotate(210deg);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0) translateY(0);
+      opacity: 1;
+      
+    }
+  }
+  
+  @keyframes move-in-right {
+    0% {
+      transform: translateX(100%) translateY(-20%) rotate(-210deg);
+      opacity: 0;
+    
+    }
+    100% {
+      transform: translateX(0) translateY(0);
+      opacity: 1;
+     
+    }
+  }

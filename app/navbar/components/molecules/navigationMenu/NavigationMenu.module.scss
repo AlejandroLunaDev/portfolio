@@ -1,21 +1,21 @@
 @use "sass:map";
-@import '../../../../scss/base/variables.scss';
-@import '../../../../scss/base/_mixinsfunc.scss';
+@use '../../../../scss/base/variables.scss';
+@use '../../../../scss/base/_mixinsfunc.scss';
 
 .App {
     z-index: 999;
      button {
-      padding: 12px 20px;
+      background-color: red;
+      
       font-family: sofia-pro, sans-serif;
       font-weight: 400;
       font-style: normal;
       font-size: 16px;
-      color: $primary-bright;
+      color: variables.$primary-bright;
       background-color: transparent;
       border: none;
       cursor: pointer;
       border-radius: 8px;
-      width: 160px;
       z-index: 9;
     } 
     
@@ -41,7 +41,7 @@
       font-style: normal;
       font-size: 2.25rem;
       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: $primary-bright;
+      color: variables.$primary-bright;
       cursor: pointer;
 
       &:hover {
@@ -80,7 +80,7 @@
       justify-content: end;
     }
   }
-  @include respond-to("tablet") {
+  @include mixinsfunc.respond-to("tablet") {
     .App{
       ul {
         width: 250px;
@@ -91,11 +91,11 @@
       }
     }
     .menu {
-      top: 20px;
-      right: 100px;
+      top: 16px;
+      right: 70px;
     }}
   
- @include respond-to("desktop") {
+ @include mixinsfunc.respond-to("desktop") {
   .App{
     ul {
       width: 250px;
@@ -106,8 +106,8 @@
     }
   }
   .menu {
-    top: 20px;
-    right: 100px;
+    top: 16px;
+    right: 70px;
   }
 
  }
