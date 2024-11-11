@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Si no necesitas realizar ninguna personalización adicional, no es necesario modificar la configuración de Webpack
 };
 
 export default nextConfig;

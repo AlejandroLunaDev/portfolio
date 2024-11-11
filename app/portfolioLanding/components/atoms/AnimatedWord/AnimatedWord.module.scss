@@ -1,7 +1,7 @@
 @use 'sass:map';
 @use '../../../../scss/base/_variables.scss'; // Importar variables y mixins si es necesario
 @use '../../../../scss/base/_mixinsfunc.scss';
-@use '../../../../scss/animations/animations.scss'; // Si tienes animaciones globales, importarlas aquí
+@use '../../../../scss/animations/_animations.scss'; // Si tienes animaciones globales, importarlas aquí
 
 /* Animación que se aplicará a las palabras */
 .animated-word {

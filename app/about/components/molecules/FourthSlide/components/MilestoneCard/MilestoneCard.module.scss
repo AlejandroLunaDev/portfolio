@@ -29,3 +29,37 @@
         line-height: 1.2rem;
     }
 }
+
+@include mixinsfunc.respond-to("tablet", 1023px) {
+    .milestone-card {
+        padding: 30px;
+        header {
+            h2 {
+                font-size: 1.5rem;
+            }
+            span {
+                font-size: 1rem;
+            }
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+@include mixinsfunc.respond-to("desktop") {
+    .milestone-card {
+        padding: 30px;
+        header {
+            h2 {
+                font-size: 1.5rem;
+            }
+            span {
+                font-size: 1rem;
+            }
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+}
