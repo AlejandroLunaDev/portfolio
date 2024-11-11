@@ -12,16 +12,15 @@ const FourthSlide = () => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          console.log(entry.isIntersecting);  // Verificar si la sección está en el viewport
           if (entry.isIntersecting) {
-            setIsInView(true);  // Activar la animación cuando el contenedor está en el viewport
+            setIsInView(true);  
           } else {
-            setIsInView(false); // Desactivar la animación cuando el contenedor no está en el viewport
+            setIsInView(false); 
           }
         });
       },
       {
-        threshold: 0.5, // Se activará cuando el 50% del contenedor sea visible
+        threshold: 0.5, 
       }
     );
 
@@ -52,8 +51,8 @@ const FourthSlide = () => {
         <>
           <motion.div
             className={styles['milestone-card']}
-            initial={{ opacity: 0, x: 100 }} // Comienza con opacidad 0 y desplazado a la derecha
-            animate={{ opacity: 1, x: 0 }} // Animación de entrada (viene de la derecha)
+            initial={{ opacity: 0, x: 100 }} 
+            animate={{ opacity: 1, x: 0 }} 
             transition={{ duration: 0.6 }}
           >
             <MilestoneCard
@@ -66,8 +65,8 @@ const FourthSlide = () => {
 
           <motion.div
             className={styles['milestone-card']}
-            initial={{ opacity: 0, x: -100 }} // Comienza con opacidad 0 y desplazado a la izquierda
-            animate={{ opacity: 1, x: 0 }} // Animación de entrada (viene de la izquierda)
+            initial={{ opacity: 0, x: -100 }} 
+            animate={{ opacity: 1, x: 0 }} 
             transition={{ duration: 0.6 }}
           >
             <MilestoneCard
@@ -80,8 +79,8 @@ const FourthSlide = () => {
 
           <motion.div
             className={styles['milestone-card']}
-            initial={{ opacity: 0, x: 100 }} // Comienza con opacidad 0 y desplazado a la derecha
-            animate={{ opacity: 1, x: 0 }} // Animación de entrada (viene de la derecha)
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }} 
             transition={{ duration: 0.6 }}
           >
             <MilestoneCard

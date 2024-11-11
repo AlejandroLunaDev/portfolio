@@ -1,7 +1,8 @@
-import type { NextConfig } from "next";
+import { NextConfig } from 'next';
+import { i18n } from './next-i18next.config';
 
 const nextConfig: NextConfig = {
-  // Si no necesitas realizar ninguna personalización adicional, no es necesario modificar la configuración de Webpack
+  i18n,
 };
 
 export default nextConfig;

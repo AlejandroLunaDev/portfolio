@@ -3,6 +3,7 @@ import {
   SecondSlide,
   ThirdSlide,
   FourthSlide,
+  FifthSlide,
 } from './components/molecules';
 
 export default function About() {
@@ -20,7 +21,9 @@ export default function About() {
       <section>
         <FourthSlide />
       </section>
-      <section>5</section>
+      <section>
+        <FifthSlide />
+      </section>
     </>
   );
 }
