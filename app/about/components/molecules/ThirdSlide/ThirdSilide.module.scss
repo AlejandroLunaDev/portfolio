@@ -1,7 +1,7 @@
 @use 'sass:map';
-@use '../../../scss/base/variables';
-@use '../../../scss/base/_mixinsfunc.scss';
-@use '../../../scss/animations/animations';
+@use '../../../../scss/base/variables';
+@use '../../../../scss/base/_mixinsfunc.scss';
+@use '../../../../scss/animations/animations';
 .skills {
   background: variables.$primary-dark;
   position: relative;
@@ -265,9 +265,9 @@
       width: 60px !important;
       height: 60px !important;  
     }
-    .divider,
+  /*   .divider,
     .divider1 {
       display: block;
-      }
+      } */
     }
       }

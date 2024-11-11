@@ -1,22 +1,26 @@
-
-import FirstSlide from './components/FirstSlide/FirstSlide'
-import SecondSlide from './components/SecondSlide/SecondSlide'
-import ThirdSlide from './components/ThirdSlide/ThirdSlide'
-
+import {
+  FirstSlide,
+  SecondSlide,
+  ThirdSlide,
+  FourthSlide,
+} from './components/molecules';
 
 export default function About() {
   return (
     <>
-    <section>
-    <FirstSlide />
-    </section>
-    <section>
-    <SecondSlide />
-    </section>
-    <section>
-    <ThirdSlide />
-    </section>
-    <section>4</section>
+      <section>
+        <FirstSlide />
+      </section>
+      <section>
+        <SecondSlide />
+      </section>
+      <section>
+        <ThirdSlide />
+      </section>
+      <section>
+        <FourthSlide />
+      </section>
+      <section>5</section>
     </>
-  )
+  );
 }

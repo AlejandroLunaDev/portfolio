@@ -1,11 +1,6 @@
 import { useEffect, useState } from 'react';
 
-/**
- * Custom hook to detect whether the mouse is hovering an element.
- *@function useHover
- *@param {React.RefObject<HTMLElement>} ref - ref to React.Node or HTML element
- *@returns {boolean} isHovering - the hook returns a ref and a boolean value indicating whether the element with that ref is currently being hovered
- */
+
 
 export default function useHover(ref: React.RefObject<HTMLElement>): boolean {
   const [isHovering, setIsHovering] = useState(false);

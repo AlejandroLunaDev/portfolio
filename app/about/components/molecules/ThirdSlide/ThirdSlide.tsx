@@ -191,7 +191,7 @@ export default function ThirdSlide() {
           </ul>
         </div>
       </main>
-      <div className={styles.divider1}></div>
+ {/*      <div className={styles.divider1}></div> */}
     </section>
   );
 }
