@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import './PortfolioLanding.scss';
 import TapHint from '@/app/common/components/molecules/tapHint/TapHint';
@@ -15,7 +16,7 @@ export default function PortfolioLanding() {
   return (
     <section className='home'>
       <picture>
-        <Image src='/logoale3D.svg' width={500} height={500} alt='logo' />
+        <Image priority src='/images/LogoAle3D.webp' width={500} height={500} alt='logo' />
       </picture>
       <article>
         <div className='gostContainer'></div>

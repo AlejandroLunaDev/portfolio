@@ -1,8 +1,9 @@
-import { NextConfig } from 'next';
-import { i18n } from './next-i18next.config';
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  webpack(config) {
+    config.cache = false; // Desactiva el caché
+    return config;
+  },
+}
 
-const nextConfig: NextConfig = {
-  i18n,
-};
-
-export default nextConfig;
+module.exports = nextConfig;

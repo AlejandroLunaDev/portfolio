@@ -1,7 +1,5 @@
 import { useEffect, useState } from 'react';
 
-
-
 export default function useHover(ref: React.RefObject<HTMLElement>): boolean {
   const [isHovering, setIsHovering] = useState(false);
 

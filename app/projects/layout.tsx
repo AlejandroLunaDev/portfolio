@@ -10,14 +10,14 @@ export default function ProjectsLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
-      <body>
+
+      <div>
         <header>
         <Navbar />
         </header>
         {children}
         <TapHint paragraphText="Scroll down ▼" Icon={BsMouse} />
-        </body>
-    </html>
+        </div>
+
   );
 }
