@@ -27,7 +27,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/common/components/atoms/portfolioParagraph"
-, "next.config.js"  ],
+    "app/common/components/portfolioParagraph",
+    "next.config.js"
+  ],
   "exclude": ["node_modules"]
 }

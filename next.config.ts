@@ -1,9 +1,7 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  webpack(config) {
-    config.cache = false; // Desactiva el caché
-    return config;
-  },
-}
+import type { NextConfig } from "next";
 
-module.exports = nextConfig;
+const nextConfig: NextConfig = {
+  /* config options here */
+};
+
+export default nextConfig;
