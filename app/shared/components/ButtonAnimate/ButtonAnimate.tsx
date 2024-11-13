@@ -3,11 +3,11 @@ import { MdOutlineKeyboardDoubleArrowRight } from 'react-icons/md';
 import styles from './ButtonAnimate.module.scss';
 
 interface ButtonAnimateProps {
-  href?: string; // Si se pasa un href, el botón se comportará como un enlace
-  download?: boolean; // Para indicar si es un botón de descarga
-  children: React.ReactNode; // Para el contenido del botón
-  hoverText?: React.ReactNode; // Texto que aparecerá en el hover
-  onClick?: () => void; // Acción para el evento click
+  href?: string; 
+  download?: boolean; 
+  children: React.ReactNode;
+  hoverText?: React.ReactNode 
+  onClick?: () => void; 
 }
 
 export default function ButtonAnimate({

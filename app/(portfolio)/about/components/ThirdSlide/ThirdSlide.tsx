@@ -18,7 +18,7 @@ export default function ThirdSlide() {
             <li>
               <figure>
                 <Image
-                  src='logos_javascript.svg'
+                  src='svgs/javascript.svg'
                   width={100}
                   height={100}
                   alt='javascript'
@@ -29,7 +29,7 @@ export default function ThirdSlide() {
             <li>
               <figure>
                 <Image
-                  src='devicon_typescript.svg'
+                  src='svgs/typescript.svg'
                   width={100}
                   height={100}
                   alt='typescript'
@@ -42,7 +42,7 @@ export default function ThirdSlide() {
                 <Image
                   width={100}
                   height={100}
-                  src='logos_react.svg'
+                  src='svgs/react.svg'
                   alt='react'
                 />
               </figure>
@@ -53,7 +53,7 @@ export default function ThirdSlide() {
                 <Image
                   width={100}
                   height={100}
-                  src='devicon_nextjs.svg'
+                  src='svgs/nextjs.svg'
                   alt='nextJS'
                 />
               </figure>
@@ -62,7 +62,7 @@ export default function ThirdSlide() {
             <li>
               <figure className={styles.large}>
                 <Image
-                  src='vscode-icons_file-type-html.svg'
+                  src='svgs/vscode-icons_file-type-html.svg'
                   alt='html'
                   width={100}
                   height={100}
@@ -75,7 +75,7 @@ export default function ThirdSlide() {
                 <Image
                   width={100}
                   height={100}
-                  src='vscode-icons_file-type-css.svg'
+                  src='svgs/vscode-icons_file-type-css.svg'
                   alt='css'
                 />
               </figure>
@@ -86,7 +86,7 @@ export default function ThirdSlide() {
                 <Image
                   width={100}
                   height={100}
-                  src='devicon_tailwindcss.svg'
+                  src='svgs/tailwind.svg'
                   alt='tailwind'
                 />
               </figure>
@@ -97,7 +97,7 @@ export default function ThirdSlide() {
                 <Image
                   width={100}
                   height={100}
-                  src='devicon_sass.svg'
+                  src='svgs/sass.svg'
                   alt='sass'
                 />
               </figure>
@@ -131,7 +131,7 @@ export default function ThirdSlide() {
                 <Image
                   width={100}
                   height={100}
-                  src='vscode-icons_file-type-node.svg'
+                  src='svgs/vscode-icons_file-type-node.svg'
                   alt='Node'
                 />
               </figure>
@@ -142,7 +142,7 @@ export default function ThirdSlide() {
                 <Image
                   width={100}
                   height={100}
-                  src='devicon_express.svg'
+                  src='svgs/express.svg'
                   alt='express'
                 />
               </figure>
@@ -153,7 +153,7 @@ export default function ThirdSlide() {
                 <Image
                   width={100}
                   height={100}
-                  src='devicon_nestjs.svg'
+                  src='svgs/nestjs.svg'
                   alt='NestJS'
                 />
               </figure>
@@ -164,7 +164,7 @@ export default function ThirdSlide() {
                 <Image
                   width={30}
                   height={30}
-                  src='vscode-icons_file-type-mongo.svg'
+                  src='svgs/vscode-icons_file-type-mongo.svg'
                   alt='mongo'
                 />
               </figure>
