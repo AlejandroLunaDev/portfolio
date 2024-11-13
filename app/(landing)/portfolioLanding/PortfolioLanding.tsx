@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import './PortfolioLanding.scss';
-import TapHint from '@/app/common/components/tapHint/TapHint';
+import TapHint from '@/app/shared/components/tapHint/TapHint';
 import { TbHandClick } from 'react-icons/tb';
 import AnimatedWord from './components/AnimatedWord/AnimatedWord';
 

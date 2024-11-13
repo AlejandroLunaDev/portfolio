@@ -1,4 +1,4 @@
-import ButtonAnimate from '../../../../common/components/ButtonAnimate/ButtonAnimate';
+import ButtonAnimate from '../../../../shared/components/ButtonAnimate/ButtonAnimate';
 import styles from './FifthSlide.module.scss';
 
 export default function FirstSlide() {
@@ -7,9 +7,7 @@ export default function FirstSlide() {
       <div className={styles.proyectos}>
         <header>
           <h1>Build & Create</h1>
-          <p>
-            Design and build simple, intuitive, and scalable web products
-          </p>
+          <p>Design and build simple, intuitive, and scalable web products</p>
         </header>
         <ButtonAnimate href="/projects" hoverText="Go to Projects">
           View my projects

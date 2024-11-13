@@ -1,7 +1,7 @@
 import { IconType } from 'react-icons';
 import styles from './taphint.module.scss';
 import { TbHandClick } from 'react-icons/tb';
-import PortfolioParagraph from '../portfolioParagraph/portfolioParagraph';
+import PortfolioParagraph from '../PortfolioParagraph/PortfolioParagraph';
 
 interface TapHintProps {
   paragraphText?: string;

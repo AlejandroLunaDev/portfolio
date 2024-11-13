@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Showcasing the creative and functional web applications built by Alejandro, a passionate frontend developer skilled in JavaScript, React, and modern web technologies.",
   keywords: ["Frontend Developer", "JavaScript", "React", "Web Development", "Portfolio", "Alejandro"],
   icons: {
-    icon: "/vite.svg",
+    icon: "/images/LogoAle3D.webp",
   }
 };
 

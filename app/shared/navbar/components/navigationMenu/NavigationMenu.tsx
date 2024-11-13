@@ -18,7 +18,7 @@ export default function NavigationMenu() {
   }, [pathname]); // Observa pathname en lugar de location
 
   const items: { id: number; name: string; route: string }[] = [
-    { id: 1, name: 'My Projects', route: '/project' },
+    { id: 1, name: 'My Projects', route: '/projects' },
     { id: 2, name: 'About Me', route: '/about' },
     { id: 3, name: 'Contact Me', route: '/contact' },
     { id: 4, name: 'Home', route: '/' }
@@ -69,7 +69,7 @@ export default function NavigationMenu() {
             {/* footer */}
             <motion.div className={styles.menuLine} initial={{ width: 0 }} animate={{ width: '100%' }} transition={{ duration: 0.5 }} />
             <Link href='/' style={{ display: 'flex', justifyContent: 'right', paddingRight: '5px' }}>
-              <motion.img src='logoale3D.svg' alt='' style={{ width: 100, height: 100 }} variants={imageVariants} />
+              <motion.img src='/images/logoale3D.webp' alt='' style={{ width: 100, height: 100 }} variants={imageVariants} />
             </Link>
             {/* Sección de Conéctate */}
             <ContactAction items={items} />
