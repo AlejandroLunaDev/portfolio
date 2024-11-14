@@ -41,6 +41,10 @@
 @include mixinsfunc.respond-to('desktop') {
   .animated-word {
     font-size: 8rem;
+    &:hover {
+      @include mixinsfunc.apply-animation(false);
+
+    }
   }
 }
 
