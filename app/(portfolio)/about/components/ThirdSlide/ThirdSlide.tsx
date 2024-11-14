@@ -62,7 +62,7 @@ export default function ThirdSlide() {
             <li>
               <figure className={styles.large}>
                 <Image
-                  src='svgs/vscode-icons_file-type-html.svg'
+                  src='svgs/html.svg'
                   alt='html'
                   width={100}
                   height={100}
@@ -75,7 +75,7 @@ export default function ThirdSlide() {
                 <Image
                   width={100}
                   height={100}
-                  src='svgs/vscode-icons_file-type-css.svg'
+                  src='svgs/css.svg'
                   alt='css'
                 />
               </figure>
@@ -131,7 +131,7 @@ export default function ThirdSlide() {
                 <Image
                   width={100}
                   height={100}
-                  src='svgs/vscode-icons_file-type-node.svg'
+                  src='svgs/node.svg'
                   alt='Node'
                 />
               </figure>
@@ -164,7 +164,7 @@ export default function ThirdSlide() {
                 <Image
                   width={30}
                   height={30}
-                  src='svgs/vscode-icons_file-type-mongo.svg'
+                  src='svgs/mongoDB.svg'
                   alt='mongo'
                 />
               </figure>

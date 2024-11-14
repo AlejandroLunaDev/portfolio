@@ -9,6 +9,9 @@
   overflow: hidden;
   padding: 0 10px;
 
+
+
+
   header {
     display: flex;
     flex-direction: column;
@@ -45,6 +48,7 @@
     backdrop-filter: blur(5px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     width: 100%;
+ 
 
     h1 {
       color: variables.$secondary;
@@ -218,6 +222,8 @@
 @include mixinsfunc.respond-to('desktop') {
   .skills {
     padding: 0 60px;
+    min-height: 100vh;
+    
     header {
       margin-top: 25px;
       h1 {

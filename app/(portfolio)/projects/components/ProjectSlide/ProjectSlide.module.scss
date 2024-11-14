@@ -24,6 +24,7 @@
         font-size: 0.6rem;
         text-align: center;
         writing-mode: vertical-lr;
+        text-transform: capitalize;
       }
 
       figure {
@@ -141,17 +142,14 @@
     justify-content: center;
     align-items: center;
     .projectHeader {
-      .projectNumber {
-        left: 50%;
-        width: 500px;
-      }
+
       .technologies {
         span {
           font-size: 1.2rem;
         }
         figure {
-          height: 600px;
-          width: 700px;
+          width: 40dvw;
+          height: 80dvh;
           &:hover {
             cursor: pointer;
             transform: perspective(1200px) rotateY(20deg);
@@ -161,6 +159,7 @@
       }
     }
     .projectContent {
+      z-index: 10;
       article {
         h1 {
           font-size: 4rem;
@@ -176,15 +175,18 @@
       }
     }
     .description {
+  
       p {
         font-size: 1.2rem;
+
       }
     }
     .projectNumber {
       left: 50%;
-      width: 300px;
-      height: 300px;
+      width: 30dvw;
+      height: 30dvh;
     }
   }
 
 }
+

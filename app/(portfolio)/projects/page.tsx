@@ -16,7 +16,7 @@ export default function Projects() {
           projectNumber="numberone"
           projectName="Easy Turnos"
           technologies={['React', 'TypeScript', 'Tailwind', 'MaterialUI']}
-          description="Easy Turnos es un sitio para profesionales que buscan gestionar citas con sus clientes de manera fácil y rápida. Este proyecto surgió de mi participación en la simulación laboral de No-Country, donde trabajé en equipo para desarrollar una solución eficiente y moderna para la gestión de citas."
+          description="Easy Turnos is a site for professionals looking to manage appointments with their clients easily and quickly. This project came about through my participation in a work simulation at No-Country, where I collaborated with a team to develop an efficient and modern solution for appointment management."
           projectImage="proyectoone"
           demoLink="https://easy-turnos.vercel.app/"
           githubLink="https://github.com/NoCountrySimulacion/EasyTurnos/tree/frontend"
@@ -28,8 +28,8 @@ export default function Projects() {
         <ProjectSlide
           projectNumber="numbertwo"
           projectName="SiLoUso"
-          technologies={['React', 'TypeScript', 'Tailwind', 'MaterialUI']}
-          description="SiLoUso es un proyecto Full-Stack de ecommerce desarrollado durante los cursos en Coderhouse. En este proyecto, tuve el desafío de aprender nuevas tecnologías y aplicar todo lo aprendido para poner en funcionamiento una tienda en línea completa."
+          technologies={['React', 'TypeScript', 'Tailwind', 'MaterialUI','Express', 'MongoDB']}
+          description="SiLoUso is a Full-Stack ecommerce project developed during my courses at Coderhouse. In this project, I faced the challenge of learning new technologies and applying all I had learned to launch a fully functional online store."
           projectImage="projecttwo"
           demoLink="https://silouso.vercel.app/"
           githubLink="https://github.com/NoCountrySimulacion/SiLoUso/tree/frontend"
@@ -41,12 +41,25 @@ export default function Projects() {
         <ProjectSlide
           projectNumber="numberthree"
           projectName="Windows 11 Clone"
-          technologies={['React', 'TypeScript', 'Tailwind', 'MaterialUI']}
-          description="Windows11-Clone es un proyecto desarrollado completamente en JavaScript, donde puse a prueba mis habilidades iniciales en el lenguaje. El objetivo fue crear una aplicación interactiva y atractiva, replicando la experiencia del sistema operativo Windows 11."
+          technologies={['html', 'css', 'Javascript', 'Sass']}
+          description="Windows11-Clone is a project developed entirely in JavaScript, where I tested my initial skills in the language. The goal was to create an interactive and engaging application that replicates the experience of the Windows 11 operating system."
           projectImage="projectthree"
           demoLink="https://windows-11-clone.vercel.app/"
           githubLink="https://github.com/NoCountrySimulacion/Windows-11-Clone/tree/frontend"
           background="linear-gradient(0deg, rgba(59, 4, 62, 1) 0%, rgba(0, 0, 0, 1) 30%)"
+        />
+      </section>
+      <section>
+        {/* Project 4 */}
+        <ProjectSlide
+          projectNumber="numberfour"
+          projectName="WorkWise"
+          technologies={['nextjs', 'typescript', 'zustand', 'tailwind']}
+          description="It is a tool that facilitates human resource management through an innovative, intuitive, and practical design. It allows for employee registration, attendance control, justification, vacation, and leave management, with the objective of payroll processing and attendance control."
+          projectImage="workwise"
+          demoLink=""
+          githubLink="https://github.com/AlejandroLunaDev/workwise"
+          background="linear-gradient(180deg, rgba(59, 4, 62, 1) 0%, rgba(0, 0, 0, 1) 30%)"
         />
       </section>
     </>

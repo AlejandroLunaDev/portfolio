@@ -68,12 +68,13 @@ export default function ProjectSlide({
           <div className={styles.description}>
             <p>{description}</p>
             <div className={styles.buttons}>
-              <div>
-
-              <ButtonAnimate href={demoLink} hoverText="Demo">
-                Demo
-              </ButtonAnimate>
-              </div>
+            {demoLink && (
+                <div>
+                  <ButtonAnimate href={demoLink} hoverText="Demo">
+                    Demo
+                  </ButtonAnimate>
+                </div>
+              )}
               <div>
 
               <ButtonAnimate href={githubLink} hoverText="GitHub" >

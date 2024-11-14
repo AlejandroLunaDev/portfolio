@@ -10,6 +10,7 @@
   line-height: 6.1rem;
   letter-spacing: -5px;
   font-weight: 700;
+
   
   @include mixinsfunc.apply-animation();
 
@@ -33,6 +34,7 @@
 @include mixinsfunc.respond-to('tablet', 1023px) {
   .animated-word {
     font-size: 6rem;
+    
   }
 }
 
@@ -41,6 +43,9 @@
     font-size: 8rem;
   }
 }
+
+
+
 
 
 

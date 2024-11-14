@@ -13,6 +13,7 @@
    display: flex;
    justify-content: center;
    animation: fadeIn  2s ease-in-out;
+
    img{
     width: 250px;
     height: auto;
@@ -68,9 +69,9 @@
 @include mixinsfunc.respond-to('desktop') {
   .home {
     picture {
-      height: 500px;
+      height: 70vh;
       img {
-        width: 550px;
+        width: 30vw;
       }
     }
     article {

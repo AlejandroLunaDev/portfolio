@@ -4,6 +4,7 @@ $breakpoints: (
   'mobile': 390px,
   'tablet': 768px,
   'desktop': 1220px,
+  'widescreen': 1440px
 );
 
 /* Colors */
@@ -16,5 +17,6 @@ $background-dim2: #0e0f11;
 
 $color-primary: #3b043e;
 $secondary: #7feaff;
+$secondary-dim: #7feaff9a;
 
 $neon-1: #a7d575;
