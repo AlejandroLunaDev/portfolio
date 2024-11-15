@@ -1,11 +1,12 @@
-import type { NextConfig } from "next";
+import createNextIntlPlugin from 'next-intl/plugin';
+import type { NextConfig } from 'next';
+
+// Usa un string para indicar la ruta de los mensajes
+const withNextIntl = createNextIntlPlugin(); // Ruta relativa donde están tus traducciones
 
 const nextConfig: NextConfig = {
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'es', 'pt'],
-  },
-  reactStrictMode: true,
+  
+  // Agrega aquí otras configuraciones que necesites
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);

@@ -1,7 +1,7 @@
 @use 'sass:map';
-@use '../../scss/base/mixinsfunc';
-@use '../../scss/base/_variables.scss';
-@use '../../scss/animations/_animations';
+@use '../../../scss/base/mixinsfunc';
+@use '../../../scss/base/_variables.scss';
+@use '../../../scss/animations/_animations';
 
 .home {
   @include mixinsfunc.flex(column, $jc: center, $al: center);

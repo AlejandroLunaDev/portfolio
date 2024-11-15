@@ -1,0 +1,16 @@
+{
+    "links": {
+      "about": "About",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "tapHint": {
+      "text": "Tap any word"
+    },
+    "words": {
+      "hello": "hello",
+      "iam": "i am",
+      "ale": "ale"
+    }
+  }
+  

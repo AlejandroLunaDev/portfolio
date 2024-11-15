@@ -1,0 +1,16 @@
+{
+    "links": {
+      "about": "Sobre",
+      "projects": "Projetos",
+      "contact": "Contato"
+    },
+    "tapHint": {
+      "text": "Toque em qualquer palavra"
+    },
+    "words": {
+      "hello": "olá",
+      "iam": "eu sou",
+      "ale": "ale"
+    }
+  }
+  
