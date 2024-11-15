@@ -33,12 +33,6 @@ a {
 
 }
 
-@include mixinsfunc.respond-to("tablet", 1023px) {
-  html {
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-  }
-}
 
 @include mixinsfunc.respond-to("desktop") {
   html {
