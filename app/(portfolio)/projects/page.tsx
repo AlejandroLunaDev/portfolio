@@ -15,7 +15,7 @@ export default function Projects() {
         <ProjectSlide
           projectNumber="numberone"
           projectName="Easy Turnos"
-          technologies={['React', 'TypeScript', 'Tailwind', 'MaterialUI']}
+          technologies={['react', 'typeScript', 'tailwind', 'materialUI']}
           description="Easy Turnos is a site for professionals looking to manage appointments with their clients easily and quickly. This project came about through my participation in a work simulation at No-Country, where I collaborated with a team to develop an efficient and modern solution for appointment management."
           projectImage="proyectoone"
           demoLink="https://easy-turnos.vercel.app/"
@@ -28,7 +28,7 @@ export default function Projects() {
         <ProjectSlide
           projectNumber="numbertwo"
           projectName="SiLoUso"
-          technologies={['React', 'TypeScript', 'Tailwind', 'MaterialUI','Express', 'MongoDB']}
+          technologies={['react', 'typeScript', 'tailwind', 'materialUI','express', 'mongoDB']}
           description="SiLoUso is a Full-Stack ecommerce project developed during my courses at Coderhouse. In this project, I faced the challenge of learning new technologies and applying all I had learned to launch a fully functional online store."
           projectImage="projecttwo"
           demoLink="https://silouso.vercel.app/"
@@ -41,7 +41,7 @@ export default function Projects() {
         <ProjectSlide
           projectNumber="numberthree"
           projectName="Windows 11 Clone"
-          technologies={['html', 'css', 'Javascript', 'Sass']}
+          technologies={['html', 'css', 'javascript', 'sass']}
           description="Windows11-Clone is a project developed entirely in JavaScript, where I tested my initial skills in the language. The goal was to create an interactive and engaging application that replicates the experience of the Windows 11 operating system."
           projectImage="projectthree"
           demoLink="https://windows-11-clone.vercel.app/"
