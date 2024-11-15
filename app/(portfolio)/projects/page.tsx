@@ -15,7 +15,7 @@ export default function Projects() {
         <ProjectSlide
           projectNumber="numberone"
           projectName="Easy Turnos"
-          technologies={['react', 'typeScript', 'tailwind', 'materialUI']}
+          technologies={['react', 'typescript', 'tailwind', 'materialui']}
           description="Easy Turnos is a site for professionals looking to manage appointments with their clients easily and quickly. This project came about through my participation in a work simulation at No-Country, where I collaborated with a team to develop an efficient and modern solution for appointment management."
           projectImage="proyectoone"
           demoLink="https://easy-turnos.vercel.app/"
@@ -28,7 +28,7 @@ export default function Projects() {
         <ProjectSlide
           projectNumber="numbertwo"
           projectName="SiLoUso"
-          technologies={['react', 'typeScript', 'tailwind', 'materialUI','express', 'mongoDB']}
+          technologies={['react', 'typescript', 'tailwind', 'materialui','express', 'mongoDB']}
           description="SiLoUso is a Full-Stack ecommerce project developed during my courses at Coderhouse. In this project, I faced the challenge of learning new technologies and applying all I had learned to launch a fully functional online store."
           projectImage="projecttwo"
           demoLink="https://silouso.vercel.app/"
