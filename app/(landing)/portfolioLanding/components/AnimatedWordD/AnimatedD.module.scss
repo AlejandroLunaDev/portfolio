@@ -3,10 +3,14 @@
 @use '../../../../scss/base/_mixinsfunc.scss';
 @use '../../../../scss/animations/_animations.scss';
 
+.container .wordContainer + .wordContainer {
+  margin-left: -10px;
+}
+
 .container {
   display: flex;
   justify-content: center;
-  
+  gap: 0;
 }
 
 .wordContainer {
