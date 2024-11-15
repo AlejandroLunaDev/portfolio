@@ -3,22 +3,16 @@
 @use '../../../../scss/base/_mixinsfunc.scss';
 @use '../../../../scss/animations/_animations.scss';
 
-.container .wordContainer + .wordContainer {
-  margin-left: -10px;
-}
+
 
 .container {
   display: flex;
   justify-content: center;
-  gap: 0;
 }
 
 .wordContainer {
   position: relative;
   display: flex;
-  justify-content: center;
-
-
 
 }
 
@@ -93,7 +87,7 @@
 }
 
 .container .wordContainer + .wordContainer {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 @include mixinsfunc.respond-to("tablet", 1023px) {
@@ -106,10 +100,16 @@
   .hoverText {
     font-size: 2rem;
   }
+  .container .wordContainer + .wordContainer {
+    margin-left: 15px;
+  }
 }
 @include mixinsfunc.respond-to("desktop") {
 .container{
   width: 100%;
+}
+.container .wordContainer + .wordContainer {
+  margin-left: 20px;
 }
 .wordContainer{
   &:hover .hoverText {

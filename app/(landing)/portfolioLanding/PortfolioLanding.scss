@@ -21,19 +21,7 @@
     }
   }
 
-  article {
-    .wordsContainer {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      width: 30%;
-      object-fit: contain;
-      margin: 0 auto;
-    }
-    .variant {
-      color: red !important;
-    }
-  }
+
   .links-menu {
     display: flex;
     flex-direction: column;
